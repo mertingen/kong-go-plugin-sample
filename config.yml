@@ -1,0 +1,10 @@
+_format_version: "1.1"
+services:
+- url: https://reqres.in/api/users?page=2
+  routes:
+  - paths:
+    - "/"
+  plugins:
+  - name: key-checker
+    config:
+      apikey: mysecretconsumerkey
